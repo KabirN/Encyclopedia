@@ -1,0 +1,23 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+  Encyclopedia
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<h1><i class="fab">Programming Language</i></h1>
+<br>
+<ul>
+  {% for entry in entries %}
+  <a href="/wiki/{{ entry }}"><li> <h4><i class="fab"> {{ entry }}</i></h4> </li>
+  </a>
+  {% endfor %}
+</ul>
+
+ <h2>
+
+ </h2>
+ </div>
+{% endblock %}

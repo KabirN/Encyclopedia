@@ -1,0 +1,41 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+ Create new page
+{% endblock %}
+
+{% block body %}
+
+{% block nav %}
+{% endblock %}
+
+{% if existing %}
+
+<div class="container" style="text-align:center;">
+<div class="alert alert-warning" role="alert">
+  <strong>Warning!</strong> Better check yourself,<a href="#" class="alert-link">This entry is already exists.</a>.
+</div>
+<div class="alert alert-success" role="alert">
+  <strong></strong> Want to creat new content?<a href="{% url 'newEntry' %}" class="alert-link">click here.</a>.
+</div>
+</div>
+
+{% else %}
+
+<div class="container" style="center">
+<div class="form group">
+  <form action="{% url 'newEntry' %}" method="post">
+
+    {% csrf_token %}
+     {{ form.as_p }}
+
+    <input type ="submit">   or
+    <button class="btn btn-default"><a href="{% url 'index' %}">Go to home page.</a></button>
+  </form>
+</div>
+</div>
+{% endif %}
+
+
+{% endblock %}

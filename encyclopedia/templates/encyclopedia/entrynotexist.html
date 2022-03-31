@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+  {{ entrytitle }}
+{% endblock %}
+
+{% block body %}
+<div class="container" style="text-align:center;">
+<div class="main col-lg-10 col-md-9">
+  <h2>Searching for {{ entrytitle }} ?? </h2><br>
+   <h3>OOPSS....</h3>
+    <br>
+    Your reuqested page {{ entrytitle }} can't found.<br>
+    looks like this page hasn't submitted yet.<br>
+    <br>
+<h5>If you wanna create a new page,<a href="{% url 'newEntry' %}"> Click here.</a>  or  <a href="{% url 'index' %}"> Go Home </a></h5>
+</div>
+</div>
+{% endblock %}
