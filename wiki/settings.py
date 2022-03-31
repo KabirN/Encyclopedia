@@ -25,7 +25,7 @@ SECRET_KEY = 'oc=_!xjm1%d7&0$eaeweuovy&=up^kt+h%j80wsdg%*jr6509%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['wikipedia-cli.herokuapp.com' , '127.0.0.1']
+ALLOWED_HOSTS = ['wikipedia-cli.herokuapp.com']
 
 
 # Application definition
