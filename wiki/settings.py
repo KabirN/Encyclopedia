@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['wikipedia-cli.herokuapp','127.0.0.1']
 
 INSTALLED_APPS = [
     'encyclopedia',
+    'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
