@@ -24,6 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'oc=_!xjm1%d7&0$eaeweuovy&=up^kt+h%j80wsdg%*jr6509%'
+key = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -128,7 +129,7 @@ USE_TZ = True
 #BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/wiki/encyclopedia/static/'
+STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 

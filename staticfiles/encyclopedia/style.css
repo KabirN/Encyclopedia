@@ -1,0 +1,43 @@
+body {
+    margin: 10;
+    background-color: #ffe6e6;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 15px;
+    padding-top: 20px;
+}
+
+textarea {
+    height: 90vh;
+    width: 80%;
+}
+
+.main {
+    padding: 28px;
+}
+
+.search {
+    width: 100%auto;
+    font-size: 17px;
+    line-height: 20px;
+
+}
+
+.sidebar {
+    background-color:#cccccc;
+    height: 100vh;
+    padding: 30px;
+}
+
+.sidebar h2 {
+    margin-top: 50px;
+}
+.navbar{
+    background-color: #1a1a1a;
+    height: 60px;
+}
